@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="resultado"></div>
+
+    <script src="file:///C:/Users/admlocalcselab/WORKSPACE/TDev/Pessoas/script.js"></script>
+    <script src="file:///C:/Users/admlocalcselab/WORKSPACE/TDev/Pessoas/cliente.js"></script>
+    <script src="file:///C:/Users/admlocalcselab/WORKSPACE/TDev/Pessoas/fornecedor.js"></script>
+
+    <script>
+        var p = new pessoa();
+        p.nome = "Willy";
+        p.cpf = 075 + "." + 266 + "." + 201 + "-" + 50;
+        p.telefone = +55 + "(48)" + 998094533;
+        p.email = "willy.biti@gmail.com";
+        p.gravarEmMemoria();
+        console.log(pessoa.Base);
+
+        var f = new fornecedor();
+        f.nome = "fornecedor";
+        f.cpf = 075 + "." + 266 + "." + 201 + "-" + 50;
+        f.telefone = +55 + "(48)" + 998094533;
+        f.email = "willy.biti@gmail.com";
+        f.gravarEmMemoria();
+        console.log(fornecedor.Base);
+
+        var c = new cliente();
+        c.nome = "cliente";
+        c.cpf = 075 + "." + 266 + "." + 201 + "-" + 50;
+        c.telefone = +55 + "(48)" + 998094533;
+        c.email = "willy.biti@gmail.com";
+        c.gravarEmMemoria();
+        console.log(cliente.Base);
+
+        console.log(" ============= metodo da insancia p ========")
+        p.original();
+        console.log(" ============= metodo da insancia p ========")
+
+        console.log(" ============= metodo da insancia p ========")
+        c.original();
+        console.log(" ============= metodo da insancia p ========")
+
+
+    </script>
+
+    <h1>Orientação a Objetos</h1>
+
+
+</body>
+
+</html>
