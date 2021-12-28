@@ -1,0 +1,33 @@
+<script>
+    alunos = []
+    for(i=0; i<3; i++){
+        nome = prompt("Digite o nome do aluno");
+        notas = []
+        for(x=1; x<=2; x++){
+            nota = prompt("Digite a nota de numero" + x + "do alunos" + nome );
+            nota = parseInt(nota);
+            notas.push(nota)
+        }
+
+        aluno = {}
+        aluno.nome = nome
+        aluno.notas = notas
+        alunos.push(aluno);
+    }
+
+    for(i=0; i<alunos.length; i++){
+        aluno = alunos[i]
+        document.write("O aluno" + aluno.nome + " teve as notas: <br>");
+        somaDasNotas = 0;
+        for(x=0; x<aluno.notas.length; x++){
+            nota = aluno.notas[x];
+            somaDasNotas = somaDasNotas + nota
+            document.write('Nota' + (x+1)+ 'do aluno: ' + nota + ' <br>');
+        }
+        media = somaDasNotas/aluno.notas.length;
+        document.write("A media do aluno" + media + " <br>");
+        document.write("================== <br>");
+    }
+
+
+</script>
