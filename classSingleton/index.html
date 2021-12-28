@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="resultado"></div>
+
+    <script src="file:///C:/Users/admlocalcselab/WORKSPACE/TDev/classSingleton/singleton.js"></script>
+    
+    
+    <script>
+    console.log(singleton);
+    console.log("======= Sem instancia iniciada ===========");
+    console.log(singleton.instancia);
+    singleton.iniciar();
+    console.log("======= Com instancia iniciada ===========");
+    console.log(singleton.instancia);
+
+    console.log("======= Alterando atributo nome ===========");
+    singleton.instancia.nome = "Willy";
+    console.log(singleton.instancia.nome);
+
+    console.log("======= Dando alerta ===========");
+    singleton.instancia.mostrarNaTela();
+    </script>
+
+    <h1>Exemplo classe singleton</h1>
+    
+
+</body>
+
+</html>
