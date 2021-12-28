@@ -1,33 +1,27 @@
-<script>
-    alunos = []
-    for(i=0; i<3; i++){
-        nome = prompt("Digite o nome do aluno");
-        notas = []
-        for(x=1; x<=2; x++){
-            nota = prompt("Digite a nota de numero" + x + "do alunos" + nome );
-            nota = parseInt(nota);
-            notas.push(nota)
-        }
-
-        aluno = {}
-        aluno.nome = nome
-        aluno.notas = notas
-        alunos.push(aluno);
-    }
-
-    for(i=0; i<alunos.length; i++){
-        aluno = alunos[i]
-        document.write("O aluno" + aluno.nome + " teve as notas: <br>");
-        somaDasNotas = 0;
-        for(x=0; x<aluno.notas.length; x++){
-            nota = aluno.notas[x];
-            somaDasNotas = somaDasNotas + nota
-            document.write('Nota' + (x+1)+ 'do aluno: ' + nota + ' <br>');
-        }
-        media = somaDasNotas/aluno.notas.length;
-        document.write("A media do aluno" + media + " <br>");
-        document.write("================== <br>");
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="file:///C:/Users/admlocalcselab/WORKSPACE/TDev/mostrar.js"></script>
+    <script src="file:///C:/Users/admlocalcselab/WORKSPACE/TDev/capturar"></script>
+    <script src="file:///C:/Users/admlocalcselab/WORKSPACE/TDev/funcoes"></script>
 
 
-</script>
+
+    <script>
+    alunos = capturarAluno();
+    mostrarAlunos(alunos);
+
+    </script>
+
+
+    
+    
+</body>
+</html>
