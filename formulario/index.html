@@ -9,7 +9,7 @@
 <body>
     <h1>Cadastro em tempo de execução</h1>
 
-    <fieldset>
+    <fieldset id="formCadastro">
         <legend>Cadastro de pessoas</legend>
         <form action="">
             <div>
@@ -38,6 +38,11 @@
             </div>
         </form>
     </fieldset>
+
+    <input type="button" value="Voltar pro formulario de cadastro" onclick="mostarFormulario()" id=
+    "mostrarForm" style="display: none;">
+
+
     <fieldset>
         <legend>Pessoas cadastradas</legend>
         <table border="1" id="registros">
